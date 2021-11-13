@@ -1,9 +1,7 @@
-import React, { Component, useState } from 'react';
+import React, { Component} from 'react';
 import { InputText } from 'primereact/inputtext';
 import { Button } from 'primereact/button';
 import axios from 'axios';
-import { InputTextarea } from 'primereact/inputtextarea';
-import { Dropdown } from 'primereact/dropdown';
 
 export default class Fibonacci extends Component{
     constructor(props){
@@ -39,7 +37,7 @@ export default class Fibonacci extends Component{
               
               res => {
                   console.log(res.data);
-                  if (res.data == "Please enter a valid number"){
+                  if (typeof res.data === 'string' ){
                     this.setState({
                         didSubmit : false
                       })
@@ -66,7 +64,7 @@ export default class Fibonacci extends Component{
             
         }
         else {
-            return "Please enter a valid number"
+            return "Please enter a valid number (between 1 and 1500)"
         }
         
 
