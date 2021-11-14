@@ -10,10 +10,10 @@ describe('fibonacci', function() {
     driver = await new Builder().forBrowser('chrome').build()
     vars = {}
   })
-  /*afterEach(async function() {
+  afterEach(async function() {
     await driver.quit();
-  })*/
-  it('factorial', async function() {
+  })
+  it('fibonacci', async function() {
     await driver.get("https://frontend-mathcalculations.herokuapp.com/?#/fibonacci")
     await driver.findElement(By.id("firstname1")).click()
     await driver.findElement(By.id("firstname1")).sendKeys("4")
@@ -24,3 +24,9 @@ describe('fibonacci', function() {
     await driver.close()
   })
 })
+
+
+function settimeout (tiempo) {
+    let a = 0
+    while (a < (tiempo* 1000000)) a++
+  }

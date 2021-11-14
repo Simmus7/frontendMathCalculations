@@ -10,9 +10,9 @@ describe('factorial', function() {
     driver = await new Builder().forBrowser('chrome').build()
     vars = {}
   })
-  /*afterEach(async function() {
+  afterEach(async function() {
     await driver.quit();
-  })*/
+  })
   it('factorial', async function() {
     await driver.get("https://frontend-mathcalculations.herokuapp.com/?#/factorial")
     await driver.findElement(By.id("firstname1")).click()
@@ -24,10 +24,6 @@ describe('factorial', function() {
     await driver.close()
   })
 })
-
-
-
-
 
 
 function settimeout (tiempo) {
