@@ -16,14 +16,15 @@ export default class Fibonacci extends Component{
             n : 0,
             fibonacciSequence : "",
             didSubmit:false,
+            
         }
     }
 
     onChangeN(e) {
+        
         this.setState({
           n: e.target.value
         })
-        console.log("cambió el state")
     }
 
     onSubmit(e) {
@@ -32,17 +33,16 @@ export default class Fibonacci extends Component{
             n : this.state.n
           }
           axios
-          .post('http://localhost:5000/fibonacci', toGet)
+          .post('https://backend-mathcalculations.herokuapp.com/fibonacci', toGet)
           .then(
               res => {
-                  console.log(res.data);
                   if (typeof res.data === 'string' ){
                     this.setState({
-                        didSubmit : false
+                        fibonacciSequence: "",
+                        didSubmit : true
                       })
                   }
                   else {
-                    
                     this.setState({
                         fibonacciSequence: res.data.n,
                         didSubmit : true
@@ -53,17 +53,18 @@ export default class Fibonacci extends Component{
     }
 
     didGetResponse() {
-        if (this.state.didSubmit == true){
+        if (this.state.didSubmit == true && this.state.fibonacciSequence != ""){
+            let nToPrint = this.state.n
             return (<div>
-                        <div>The first {this.state.n} numbers of the fibonacci sequence are: </div>
+                        <div>The first {nToPrint} numbers of the fibonacci sequence are: </div>
                         <br/>
                         <div>{this.state.fibonacciSequence}</div>
                     </div>
                     )
             
         }
-        else {
-            return "Please enter a valid number (between 1 and 1500)"
+        else if (this.state.didSubmit == true) {
+            return "Please enter a valid number (integer between 1 and 1500)"
         }
         
 
