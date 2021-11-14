@@ -59,7 +59,7 @@ const App = () => {
     const [mobileMenuActive, setMobileMenuActive] = useState(false);
     const [mobileTopbarMenuActive, setMobileTopbarMenuActive] = useState(false);
 
-    PrimeReact.ripple = true;
+   PrimeReact.ripple = true;
 
     let menuClick = false;
     let mobileTopbarMenuClick = false;
