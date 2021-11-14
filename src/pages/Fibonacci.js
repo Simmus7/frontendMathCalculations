@@ -58,7 +58,7 @@ export default class Fibonacci extends Component{
             return (<div>
                         <div>The first {nToPrint} numbers of the fibonacci sequence are: </div>
                         <br/>
-                        <div>{this.state.fibonacciSequence}</div>
+                        <div id="result">{this.state.fibonacciSequence}</div>
                     </div>
                     )
             
