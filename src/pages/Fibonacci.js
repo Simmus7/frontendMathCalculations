@@ -43,7 +43,7 @@ export default class Fibonacci extends Component{
                       })
                   }
                   else {
-                    console.log("recibió respuesta correcta")
+                    
                     this.setState({
                         fibonacciSequence: res.data.n,
                         didSubmit : true
