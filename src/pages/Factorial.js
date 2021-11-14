@@ -62,7 +62,7 @@ export default class Factorial extends Component{
             
         }
         else if (this.state.didSubmit == true) {
-            return "Please enter a valid number (between 1 and 170)"
+            return "Please enter a valid number (integer between 1 and 170)"
         }
         
 
@@ -77,7 +77,7 @@ export default class Factorial extends Component{
                     <div className="field">
                         <InputText id="firstname1" type="text" placeholder="N" onChange={this.onChangeN} />
                     </div>
-                        <Button label="Get sequence!" type="submit"></Button>
+                        <Button label="Get factorial!" type="submit"></Button>
                 </div>
                 
             </form>

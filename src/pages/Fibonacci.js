@@ -64,7 +64,7 @@ export default class Fibonacci extends Component{
             
         }
         else if (this.state.didSubmit == true) {
-            return "Please enter a valid number (between 1 and 1500)"
+            return "Please enter a valid number (integer between 1 and 1500)"
         }
         
 
