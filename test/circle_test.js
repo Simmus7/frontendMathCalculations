@@ -10,10 +10,10 @@ describe('circle', function() {
     driver = await new Builder().forBrowser('chrome').build()
     vars = {}
   })
-  /*afterEach(async function() {
+  afterEach(async function() {
     await driver.quit();
-  })*/
-  it('factorial', async function() {
+  })
+  it('circle', async function() {
     await driver.get("https://frontend-mathcalculations.herokuapp.com/?#/circle")
     await driver.findElement(By.id("firstname1")).click()
     await driver.findElement(By.id("firstname1")).sendKeys("4")
@@ -26,3 +26,9 @@ describe('circle', function() {
     await driver.close()
   })
 })
+
+
+function settimeout (tiempo) {
+    let a = 0
+    while (a < (tiempo* 1000000)) a++
+  }

@@ -2,7 +2,7 @@ require('chromedriver')
 const { Builder, By, Key, until } = require('selenium-webdriver')
 
 
-describe('circle', function() {
+describe('triangle', function() {
   this.timeout(30000)
   let driver
   let vars
@@ -10,10 +10,10 @@ describe('circle', function() {
     driver = await new Builder().forBrowser('chrome').build()
     vars = {}
   })
-  /*afterEach(async function() {
+  afterEach(async function() {
     await driver.quit();
-  })*/
-  it('factorial', async function() {
+  })
+  it('triangle', async function() {
     await driver.get("https://frontend-mathcalculations.herokuapp.com/?#/triangle")
 
     await driver.findElement(By.id("side1")).click()
@@ -34,3 +34,9 @@ describe('circle', function() {
     await driver.close()
   })
 })
+
+
+function settimeout (tiempo) {
+    let a = 0
+    while (a < (tiempo* 1000000)) a++
+  }
