@@ -31,7 +31,7 @@ export default class Factorial extends Component{
             n : this.state.n
           }
           axios
-          .post('http://localhost:5000/factorial', toGet)
+          .post('https://backend-mathcalculations.herokuapp.com/factorial', toGet)
           .then(
               res => {
                   if (typeof res.data === 'string' ){

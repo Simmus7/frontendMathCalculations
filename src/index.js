@@ -8,7 +8,9 @@ import ScrollToTop from './ScrollToTop';
 
 ReactDOM.render(
     <HashRouter>
+        <ScrollToTop>
             <App></App>
+        </ScrollToTop>
     </HashRouter>,
     document.getElementById('root')
 );

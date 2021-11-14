@@ -35,6 +35,7 @@ import Triangle from './pages/Triangle';
 import  Circle from './pages/Circle';
 import  Rectangle  from './pages/Rectangle';
 import  Factorial  from './pages/Factorial';
+import  Home  from './pages/Home';
 
 
 import PrimeReact from 'primereact/api';
@@ -283,7 +284,7 @@ const App = () => {
 
             <div className="layout-main-container">
                 <div className="layout-main">
-                    
+                    <Route path="/" exact component={Home}/> 
                     <Route path="/formlayout" component={FormLayoutDemo}/>
                     <Route path="/input" component={InputDemo}/>
                     <Route path="/floatlabel" component={FloatLabelDemo}/>

@@ -33,7 +33,7 @@ export default class Fibonacci extends Component{
             n : this.state.n
           }
           axios
-          .post('http://localhost:5000/fibonacci', toGet)
+          .post('https://backend-mathcalculations.herokuapp.com/fibonacci', toGet)
           .then(
               res => {
                   if (typeof res.data === 'string' ){
