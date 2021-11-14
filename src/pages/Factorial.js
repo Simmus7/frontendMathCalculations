@@ -56,7 +56,7 @@ export default class Factorial extends Component{
             return (<div>
                         <div>The factorial of {nToPrint} is: </div>
                         <br/>
-                        <div>{this.state.factorial}</div>
+                        <div id='result'>{this.state.factorial}</div>
                     </div>
                     )
             
