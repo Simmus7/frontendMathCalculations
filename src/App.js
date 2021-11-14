@@ -34,7 +34,7 @@ import Fibonacci  from './pages/Fibonacci';
 import { Triangle } from './pages/Triangle';
 import { Circle } from './pages/Circle';
 import { Rectangle } from './pages/Rectangle';
-import { Factorial } from './pages/Factorial';
+import  Factorial  from './pages/Factorial';
 
 
 import PrimeReact from 'primereact/api';
