@@ -74,12 +74,12 @@ export default class Triangle extends Component{
             return (<div>
                         <div>
                             <div>Perimeter:</div>
-                            <div>{this.state.perimeter}cm</div>
+                            <div id="result1">{this.state.perimeter}cm</div>
                         </div>
                         <br/>
                         <div>
                             <div>Area:</div>
-                            <div>{this.state.area}cm<sup>2</sup></div>
+                            <div id="result2">{this.state.area}cm<sup>2</sup></div>
                         </div>
                     </div>
                     
