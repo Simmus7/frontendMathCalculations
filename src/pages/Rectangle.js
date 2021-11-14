@@ -93,10 +93,10 @@ export default class Rectangle extends Component{
             <form onSubmit={this.onSubmit}> 
                 <div className="formgroup-inline">
                     <div className="field">
-                        <InputText id="firstname1" type="text" placeholder="Heigth" onChange={this.onChangeHeight} />
+                        <InputText id="side1" type="text" placeholder="Heigth" onChange={this.onChangeHeight} />
                     </div>
                     <div className="field">
-                        <InputText id="firstname1" type="text" placeholder="Length" onChange={this.onChangeLarge} />
+                        <InputText id="side2" type="text" placeholder="Length" onChange={this.onChangeLarge} />
                     </div>
                         <Button label="Get area and perimeter!" type="submit"></Button>
                 </div>

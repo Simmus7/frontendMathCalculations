@@ -100,13 +100,13 @@ export default class Triangle extends Component{
             <form onSubmit={this.onSubmit}> 
                 <div className="formgroup-inline">
                     <div className="field">
-                        <InputText id="firstname1" type="text" placeholder="Side 1" onChange={this.onChangel1} />
+                        <InputText id="side1" type="text" placeholder="Side 1" onChange={this.onChangel1} />
                     </div>
                     <div className="field">
-                        <InputText id="firstname1" type="text" placeholder="Side 2" onChange={this.onChangel2} />
+                        <InputText id="side2" type="text" placeholder="Side 2" onChange={this.onChangel2} />
                     </div>
                     <div className="field">
-                        <InputText id="firstname1" type="text" placeholder="Side 3" onChange={this.onChangel3} />
+                        <InputText id="side3" type="text" placeholder="Side 3" onChange={this.onChangel3} />
                     </div>
                     <Button label="Get area and perimeter!" type="submit"></Button>
                 </div>
