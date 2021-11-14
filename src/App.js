@@ -31,10 +31,10 @@ import { EmptyPage } from './pages/EmptyPage';
 import { TimelineDemo } from './pages/TimelineDemo';
 
 import Fibonacci  from './pages/Fibonacci';
-import { Triangle } from './pages/Triangle';
-import { Circle } from './pages/Circle';
-import { Rectangle } from './pages/Rectangle';
-import { Factorial } from './pages/Factorial';
+import Triangle from './pages/Triangle';
+import  Circle from './pages/Circle';
+import  Rectangle  from './pages/Rectangle';
+import  Factorial  from './pages/Factorial';
 
 
 import PrimeReact from 'primereact/api';
@@ -184,7 +184,7 @@ const App = () => {
             items: [
                 //{label: 'Crud', icon: 'pi pi-fw pi-user-edit', to: '/crud'},
                 //{label: 'Timeline', icon: 'pi pi-fw pi-calendar', to: '/timeline'},
-                {label: 'Empty', icon: 'pi pi-fw pi-circle-off', to: '/empty'},
+                
                 {label: 'Fibonacci', icon: 'pi pi-fw pi-circle-off', to: '/fibonacci'},
                 {label: 'Factorial', icon: 'pi pi-fw pi-circle-off', to: '/factorial'},
                 {label: 'Circle', icon: 'pi pi-fw pi-circle-off', to: '/circle'},
