@@ -47,7 +47,7 @@ export default class Triangle extends Component{
             l3 : this.state.l3,
           }
           axios
-          .post('http://localhost:5000/triangle', toGet)
+          .post('https://backend-mathcalculations.herokuapp.com/triangle', toGet)
           .then(
               res => {
                   if (typeof res.data === 'string' ){

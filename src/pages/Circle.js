@@ -32,7 +32,7 @@ export default class Circle extends Component{
             radio : this.state.radio
           }
           axios
-          .post('http://localhost:5000/circle', toGet)
+          .post('https://backend-mathcalculations.herokuapp.com/circle', toGet)
           .then(
               res => {
                   if (typeof res.data === 'string' ){

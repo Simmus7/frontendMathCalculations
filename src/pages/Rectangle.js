@@ -40,7 +40,7 @@ export default class Rectangle extends Component{
             height : this.state.height
           }
           axios
-          .post('http://localhost:5000/rectangle', toGet)
+          .post('https://backend-mathcalculations.herokuapp.com/rectangle', toGet)
           .then(
               res => {
                   if (typeof res.data === 'string' ){
