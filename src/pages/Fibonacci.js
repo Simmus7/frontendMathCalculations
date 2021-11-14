@@ -34,7 +34,6 @@ export default class Fibonacci extends Component{
           axios
           .post('http://localhost:5000/fibonacci', toGet)
           .then(
-              
               res => {
                   console.log(res.data);
                   if (typeof res.data === 'string' ){
