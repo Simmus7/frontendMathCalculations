@@ -14,7 +14,7 @@ export default class Factorial extends Component{
         
         this.state = {
             n : 0,
-            factorial : 0,
+            factorial : "",
             didSubmit:false,
             
         }
@@ -36,13 +36,13 @@ export default class Factorial extends Component{
               res => {
                   if (typeof res.data === 'string' ){
                     this.setState({
-                        factorial: 0,
+                        factorial: "",
                         didSubmit : true
                       })
                   }
                   else {
                     this.setState({
-                        factorial: res.data.n,
+                        factorial: res.data.n.toString(),
                         didSubmit : true
                       })
                   }
@@ -51,7 +51,7 @@ export default class Factorial extends Component{
     }
 
     didGetResponse() {
-        if (this.state.didSubmit == true && this.state.factorial != 0){
+        if (this.state.didSubmit == true && this.state.factorial != ""){
             let nToPrint = this.state.n
             return (<div>
                         <div>The factorial of {nToPrint} is: </div>
@@ -62,7 +62,7 @@ export default class Factorial extends Component{
             
         }
         else if (this.state.didSubmit == true) {
-            return "Please enter a valid number (integer between 0 and 20000)"
+            return "Please enter a valid number (integer between 0 and 10000)"
         }
         
 
@@ -70,7 +70,7 @@ export default class Factorial extends Component{
 
     render() {
         return (
-            <div className="card">
+        <div className="card">
             <h5>Factorial</h5>
             <form onSubmit={this.onSubmit}> 
                 <div className="formgroup-inline">
