@@ -62,7 +62,7 @@ export default class Factorial extends Component{
             
         }
         else if (this.state.didSubmit == true) {
-            return "Please enter a valid number (integer between 1 and 170)"
+            return "Please enter a valid number (integer between 0 and 20000)"
         }
         
 
